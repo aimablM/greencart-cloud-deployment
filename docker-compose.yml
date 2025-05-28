@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile 
+    container_name: greencart-frontend
+    restart: always
+    ports:
+      - "5173:80"
+    networks:
+      - greencart_network
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile 
+    container_name: greencart-backend
+    restart: always
+    ports:
+      - "4000:4000"
+    environment:
+     
+    networks:
+      - greencart_network
+
+networks:
+  greencart_network:
+    name: greencart-internal-net
+    driver: bridge

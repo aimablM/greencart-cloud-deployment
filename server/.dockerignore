@@ -1,0 +1,10 @@
+.env
+node_modules
+npm-debug.log
+.DS_Store
+.vscode
+*.log
+
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yml
