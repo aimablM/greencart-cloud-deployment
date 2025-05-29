@@ -1,8 +1,19 @@
+# Ignore Node.js dependencies and build artifacts
 server/node_modules
 server/dist
 server/.env
 
+# Ignore Node.js dependencies and build artifacts
 client/.env
 client/build
 client/dist
 client/node_modules
+
+# Ignore Docker-related files
+docker-compose.yml
+
+#Ignore Terraform-related files
+terraform/.terraform
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform.lock.hcl

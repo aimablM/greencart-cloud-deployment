@@ -19,7 +19,7 @@ await connectDB()
 await connectCloudinary()
 
 // Allow multiple origins
-const allowedOrigins = ['http://localhost:5173', 'http://192.168.0.23:5173', '0.0.0.0']
+const allowedOrigins = ['http://localhost:5173', 'http://192.168.0.23:5173','http://54.172.128.215'] 
 
 app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks)
 

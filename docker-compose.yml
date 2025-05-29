@@ -21,7 +21,17 @@ services:
     ports:
       - "4000:4000"
     environment:
-     
+      - PORT=4000
+      - NODE_ENV=production
+      - JWT_SECRET=your_jwt_secret_here
+      - MONGODB_URI=
+      - SELLER_EMAIL=
+      - SELLER_PASSWORD=
+      - CLOUDINARY_CLOUD_NAME=
+      - CLOUDINARY_API_KEY=
+      - CLOUDINARY_API_SECRET=
+      - STRIPE_PUBLISHABLE_KEY=
+      - STRIPE_SECRET_KEY=
     networks:
       - greencart_network
 
